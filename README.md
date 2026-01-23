@@ -11,9 +11,9 @@ Dieses Repository enthält die Beispiele und Startdateien für den Kurs **AJAX &
 
 ## Struktur
 
-- `tag01/` – Grundlagen (Vanilla JS, XHR)
-- `tag02/` – Parameter, JSON, DOM
-- `tag03/` – jQuery, Event-Delegation, Master–Detail
+- `kap01/` – Grundlagen (Vanilla JS, XHR)
+- `kap02/` – Parameter, JSON, DOM
+- `kap03/` – jQuery, Event-Delegation, Master–Detail
 - `css/` – gemeinsames Kurs-CSS
 - `index.html` oder `index.php` – Kursübersicht
 
