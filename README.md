@@ -14,7 +14,7 @@ Dieses Repository enthält die Beispiele und Startdateien für den Kurs **AJAX &
 7. Repository klonen oder herunterladen
 8. In Laragon den Ordner als Website einrichten (DocumentRoot)
 9. Im Browser öffnen:
-   - http://ajax-jquery-kurs.test
+   - [http://ajax-jquery-kurs.test](git config --global user.name)
 
 ### Repository klonen
 
