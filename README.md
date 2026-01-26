@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # AJAX & jQuery – Kursmaterial (Teilnehmende)
 
 Dieses Repository enthält die Beispiele und Startdateien für den Kurs **AJAX & jQuery**.
@@ -40,3 +41,7 @@ git https://github.com/jaderbass/ajax-jquery-course-start
   - PHP-Datei direkt im Browser öffnen (kommt JSON zurück?)
 
 Author Jörg Aderhold 2026-01-26
+=======
+# ajax-jquery-kurs
+aktuelle Tagesstände vom AJAX jQuery Kurs
+>>>>>>> 403e7436eddebce7219bd021c79d8980832cb58e
