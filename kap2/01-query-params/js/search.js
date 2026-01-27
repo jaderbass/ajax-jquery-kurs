@@ -12,6 +12,13 @@ btn.addEventListener("click", () => {
 
   xhr.onload = () => {
     console.log('Response:', xhr.responseText);
+
+    const data = JSON.parse(xhr.responseText);
+
+    const output = document.getElementById("output");
+    data.forEach(d => {
+      output.innerHTML += d.title + "<br>";
+    });
   }
 
   xhr.send();
