@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<books>
+  <book>
+    <id>1</id>
+    <title>JavaScript Grundlagen</title>
+  </book>
+  <book>
+    <id>2</id>
+    <title>AJAX verstehen</title>
+  </book>
+  <book>
+    <id>3</id>
+    <title>Webentwicklung Praxis</title>
+  </book>
+</books>
