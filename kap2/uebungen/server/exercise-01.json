@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "title": "Debugging mit AJAX",
+    "author": "Max Mustermann"
+  },
+  {
+    "id": 2,
+    "title": "JSON verstehen",
+    "author": "Erika Musterfrau"
+  }
+]
