@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kennwortqualität testen</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    #progbar {
+      display: block;
+      height: 5px;
+      width: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="container">
+    <h1>Kennwortqualität testen</h1>
+  </header>
+
+  <main class="container">
+    <input type="text" autofocus>
+    <span id="securityHints"></span>
+    <span id="progbar"></span>
+  </main>
+
+  <footer class="container footer">
+    <p>AJAX und jQuery-Kurs</p>
+  </footer>
+  
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://code.jquery.com/color/jquery.color-3.0.0.min.js"
+    integrity="sha256-KfnxwOV3FhXN7A/28TCtqslo5fRS23cxO5XcxVO5we8=" crossorigin="anonymous"></script>
+  <script src="js/pw-check.js"></script>
+</body>
+</html>
