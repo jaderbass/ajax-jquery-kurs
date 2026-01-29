@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buchsuche</title>
+
+  <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+  <header class="container">
+    <h1>Buchsuche</h1>
+  </header>
+
+  <main class="container">
+    <section id="searchSection">
+      <h2>Suche nach Büchern</h2>
+      <input type="text" id="searchInput" placeholder="Buchtitel oder Autor eingeben">
+      <button id="searchButton">Suchen</button>
+      <div class="hint" id="msg"></div>
+    </section>
+
+    <section id="resultsSection">
+      <h2>Suchergebnisse</h2>
+      <div id="resultsContainer">
+        <!-- Suchergebnisse werden hier angezeigt -->
+      </div>
+    </section>
+  </main>
+
+  <footer class="container footer">
+    <p>AJAX jQuery-Kurs Miniprojekt "Buchsuche"</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
