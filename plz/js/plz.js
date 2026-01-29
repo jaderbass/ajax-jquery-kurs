@@ -2,13 +2,26 @@ $(document).ready(() => {
   $("#input").keyup(() => {
     $.getJSON("server/plz.php", { q: $("#input").val() })
       .done((data) => {
-        console.log(data);
-        let tableData = data;
 
+        let output = '';
+        if( data[0] !== undefined ) {
+          output = data[0].error;
+        } else {
+          console.log(data);
+          output = "<table class='result'>";
+          for (i in data) {
+            output += '<tr>';
+            output += `<td>${data[i].ort}</td>`;
+            output += `<td>${data[i].plz}</td>`;
+            output += `<td>${data[i].bundesland}</td>`;
+            output += '</tr>';
+          }
+          output += "</table>";
 
-        let output = "<table class='result'>";
+          console.log(output);
+        }
 
-        output += "</table>";
+        $("#output").html(output);
       });
   });
 });

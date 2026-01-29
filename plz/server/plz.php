@@ -1,9 +1,11 @@
 <?php
+error_reporting(0);
 $errMsg = '';
 $query = '';
 if( $_GET['q'] ) {
   if( empty( trim( $_GET['q'] ) ) ) {
     $errMsg = 'keine Eingabe';
+    echo json_encode([["error" => $errMsg]]);
     exit;
   } else {
     $query = $_GET['q'];
@@ -15,6 +17,7 @@ if( $_GET['q'] ) {
   $fp = fopen( $file, 'r' );
   if( !$fp ) {
     $errMsg = "Datei <b>$file</b> wurde nicht gefunden.";
+    echo json_encode([["error" => $errMsg]]);
     exit;
   }
 
@@ -30,7 +33,7 @@ if( $_GET['q'] ) {
 
   while( ($row = fgetcsv( $fp ) ) !== false ) {
     // Vergleiche eingegeben Zeichenkette mit dem Anfang von Ort
-    if( preg_match( "/^$query/i", $row[1] ) ) {
+    if( preg_match( "/^$query/i", $row[1] ) || preg_match("/^$query/i", $row[2]) ) {
       // Bei Treffer ins Array einfügen
       $plz_array[$counter++] = array(
         $ort => $row[1],
@@ -40,7 +43,7 @@ if( $_GET['q'] ) {
     }
   }
 
-  echo json_encode( $plz_array ?? ["error" => $errMsg] );
+  echo json_encode( $plz_array );
 
   fclose( $fp );
 }
